@@ -3,6 +3,7 @@ import "./globals.css";
 import localFont from 'next/font/local'
 import { Geist } from "next/font/google";
 import { cn } from "@/lib/utils";
+import { ThemeProvider } from 'next-themes'
 
 const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
@@ -24,9 +25,15 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+       dir="rtl"
+        suppressHydrationWarning
       className={cn("antialiased", "font-sans", geist.variable)}
     >
-      <body className={`${vazirFont.className}`}>{children}</body>
+      <body className={`${vazirFont.className} antialiased overflow-x-hidden`}>
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
