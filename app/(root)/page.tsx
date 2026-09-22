@@ -25,7 +25,7 @@ function Home() {
           >
             <div className="relative aspect-square overflow-hidden bg-muted">
               <Image
-                src={product.image}
+                src={product.images[0]}
                 alt={product.name}
                 fill
                 className="object-cover transition duration-300 group-hover:scale-105"

@@ -3,7 +3,7 @@ export type Product = {
   slug: string;
   category: string;
   description: string;
-  image: string;
+  images: string[];
   price: number;
   brand: string;
   stock: number;
@@ -17,7 +17,11 @@ const data = {
       category: "الکترونیک",
       description:
         "هدفون روگوشی با صدای شفاف، نویزکنسلینگ فعال و باتری تا ۳۰ ساعت پخش موسیقی.",
-      image: "/images/headphones.png",
+      images: [
+        "/images/headphones.png",
+        "/images/headphones-2.png",
+        "/images/headphones-3.png",
+      ],
       price: 4_850_000,
       brand: "SoundMax",
       stock: 24,
@@ -28,7 +32,11 @@ const data = {
       category: "الکترونیک",
       description:
         "ساعت هوشمند با مانیتور ضربان قلب، GPS و نمایش اعلان‌های گوشی روی مچ دست.",
-      image: "/images/smartwatch.png",
+      images: [
+        "/images/smartwatch.png",
+        "/images/smartwatch-2.png",
+        "/images/smartwatch-3.png",
+      ],
       price: 6_200_000,
       brand: "PulseTech",
       stock: 18,
@@ -39,7 +47,11 @@ const data = {
       category: "پوشاک",
       description:
         "کفش سبک و انعطاف‌پذیر برای دویدن روزانه با کفی ضربه‌گیر و رویه تنفس‌پذیر.",
-      image: "/images/sneakers.png",
+      images: [
+        "/images/sneakers.png",
+        "/images/sneakers-2.png",
+        "/images/sneakers-3.png",
+      ],
       price: 3_450_000,
       brand: "SwiftRun",
       stock: 32,
@@ -50,7 +62,11 @@ const data = {
       category: "لوازم جانبی",
       description:
         "کوله پشتی مقاوم با محفظه لپ‌تاپ ۱۵ اینچ، جیب‌های متعدد و بندهای قابل تنظیم.",
-      image: "/images/backpack.png",
+      images: [
+        "/images/backpack.png",
+        "/images/backpack-2.png",
+        "/images/backpack-3.png",
+      ],
       price: 2_150_000,
       brand: "TrailPack",
       stock: 40,
@@ -61,7 +77,11 @@ const data = {
       category: "لوازم جانبی",
       description:
         "عینک آفتابی با فریم سبک، محافظت UV400 و طراحی مینیمال مناسب استفاده روزمره.",
-      image: "/images/sunglasses.png",
+      images: [
+        "/images/sunglasses.png",
+        "/images/sunglasses-2.png",
+        "/images/sunglasses-3.png",
+      ],
       price: 980_000,
       brand: "LumenEye",
       stock: 55,
@@ -72,7 +92,11 @@ const data = {
       category: "الکترونیک",
       description:
         "دوربین دیجیتال با سنسور دقیق، فوکوس سریع و کیفیت عکس مناسب عکاسی خیابانی.",
-      image: "/images/camera.png",
+      images: [
+        "/images/camera.png",
+        "/images/camera-2.png",
+        "/images/camera-3.png",
+      ],
       price: 12_900_000,
       brand: "OptiShot",
       stock: 9,
@@ -83,7 +107,11 @@ const data = {
       category: "لپ‌تاپ",
       description:
         "لپ‌تاپ سبک با پردازنده قوی، رم ۱۶ گیگابایت و صفحه‌نمایش Full HD مناسب کار و تحصیل.",
-      image: "/images/laptop.png",
+      images: [
+        "/images/laptop.png",
+        "/images/laptop-2.png",
+        "/images/laptop-3.png",
+      ],
       price: 38_500_000,
       brand: "NovaBook",
       stock: 14,
@@ -94,7 +122,11 @@ const data = {
       category: "لپ‌تاپ",
       description:
         "لپ‌تاپ گیمینگ با کارت گرافیک اختصاصی، خنک‌کننده قدرتمند و صفحه‌نمایش ۱۴۴ هرتز.",
-      image: "/images/gaming-laptop.png",
+      images: [
+        "/images/gaming-laptop.png",
+        "/images/gaming-laptop-2.png",
+        "/images/gaming-laptop-3.png",
+      ],
       price: 72_000_000,
       brand: "ForcePC",
       stock: 7,
@@ -105,7 +137,11 @@ const data = {
       category: "مک‌بوک",
       description:
         "مک‌بوک پرو با نمایشگر Liquid Retina، باتری طولانی و عملکرد مناسب کارهای حرفه‌ای.",
-      image: "/images/macbook.png",
+      images: [
+        "/images/macbook.png",
+        "/images/macbook-2.png",
+        "/images/macbook-3.png",
+      ],
       price: 95_000_000,
       brand: "Apple",
       stock: 6,
@@ -116,7 +152,11 @@ const data = {
       category: "مک‌بوک",
       description:
         "مک‌بوک ایر فوق‌سبک با طراحی باریک، صفحه‌نمایش شفاف و باتری یک‌روزه.",
-      image: "/images/macbook-air.png",
+      images: [
+        "/images/macbook-air.png",
+        "/images/macbook-air-2.png",
+        "/images/macbook-air-3.png",
+      ],
       price: 68_500_000,
       brand: "Apple",
       stock: 11,
@@ -127,7 +167,11 @@ const data = {
       category: "گوشی",
       description:
         "گوشی هوشمند با دوربین سه‌گانه، شارژ سریع و نمایشگر AMOLED با نرخ نوسازی ۱۲۰ هرتز.",
-      image: "/images/phone.png",
+      images: [
+        "/images/phone.png",
+        "/images/phone-2.png",
+        "/images/phone-3.png",
+      ],
       price: 28_900_000,
       brand: "PixelOne",
       stock: 22,
@@ -138,7 +182,11 @@ const data = {
       category: "گوشی",
       description:
         "آیفون ۱۶ پرو با بدنه تیتانیوم، دوربین پیشرفته و پردازنده قدرتمند برای عکاسی و بازی.",
-      image: "/images/iphone.png",
+      images: [
+        "/images/iphone.png",
+        "/images/iphone-2.png",
+        "/images/iphone-3.png",
+      ],
       price: 82_000_000,
       brand: "Apple",
       stock: 10,
@@ -149,7 +197,11 @@ const data = {
       category: "گوشی",
       description:
         "گوشی اندروید با باتری ۵۰۰۰ میلی‌آمپر، حافظه ۱۲۸ گیگابایت و پشتیبانی از ۵G.",
-      image: "/images/android-phone.png",
+      images: [
+        "/images/android-phone.png",
+        "/images/android-phone-2.png",
+        "/images/android-phone-3.png",
+      ],
       price: 21_400_000,
       brand: "GalaxyX",
       stock: 28,
